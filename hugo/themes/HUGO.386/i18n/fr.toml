@@ -1,0 +1,20 @@
+[home]
+other = "Accueil"
+
+[posts]
+other = "Articles"
+
+[postslist]
+other = "Articles de blog"
+
+[categories]
+other = "Catégories"
+
+[tags]
+other = "Etiquettes"
+
+[backtohome]
+other = "Retour à l'accueil"
+
+[builton]
+other = "Propulsé par"

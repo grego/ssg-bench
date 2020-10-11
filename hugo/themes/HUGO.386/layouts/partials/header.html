@@ -1,0 +1,39 @@
+<!-- Navbar
+================================================== -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
+            <a class="brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                        {{ if .HasChildren }}
+                            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                                <a href="#">
+                                    {{ .Pre }}
+                                    <span>{{ .Name }}</span>
+                                </a>
+                            </li>
+                            <ul class="sub-menu">
+                                {{ range .Children }}
+                                    <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                                        <a href="{{ .URL }}">{{ .Name }}</a>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        {{ else }}
+                            <li>
+                                <a href="{{ .URL }}">
+                                    {{ .Pre }}
+                                    <span>{{ .Name }}</span>
+                                </a>
+                            </li>
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
