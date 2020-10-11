@@ -1,4 +1,6 @@
 #!/bin/bash
+set -euo pipefail
+
 ITERATIONS=100
 DELAY="0.05s"
 
