@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on HUGO.386</title>
+    <link>https://example.com/tags/</link>
+    <description>Recent content in Tags on HUGO.386</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0200</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>finger</title>
+      <link>https://example.com/tags/finger/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://example.com/tags/finger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lisp</title>
+      <link>https://example.com/tags/lisp/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://example.com/tags/lisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pets</title>
+      <link>https://example.com/tags/pets/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://example.com/tags/pets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>borogoves</title>
+      <link>https://example.com/tags/borogoves/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://example.com/tags/borogoves/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>food</title>
+      <link>https://example.com/tags/food/</link>
+      <pubDate>Sat, 07 Nov 2015 00:00:00 +0100</pubDate>
+      
+      <guid>https://example.com/tags/food/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

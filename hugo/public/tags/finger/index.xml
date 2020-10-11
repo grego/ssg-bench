@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>finger on HUGO.386</title>
+    <link>https://example.com/tags/finger/</link>
+    <description>Recent content in finger on HUGO.386</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0200</lastBuildDate><atom:link href="https://example.com/tags/finger/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A gallery</title>
+      <link>https://example.com/gallery/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://example.com/gallery/</guid>
+      <description>This page is just a placeholder
+To show you a functionality Of generating A picture gallery
+With this generator</description>
+    </item>
+    
+    <item>
+      <title>Gutei&#39;s Finger</title>
+      <link>https://example.com/finger/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://example.com/finger/</guid>
+      <description>Gutei raised his finger whenever he was asked a question about Zen. A boy attendant began to imitate him in this way. When a visitor asked the boy what his master had preached about, the boy raised his finger.
+Gutei heard about the boy&amp;rsquo;s mischief, seized him and cut off his finger with a knife. As the boy screamed and ran out of the room, Gutei called to him. When the boy turned his head to Gutei, Gutei raised up his own finger.</description>
+    </item>
+    
+  </channel>
+</rss>

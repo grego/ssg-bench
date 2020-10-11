@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kōans on HUGO.386</title>
+    <link>https://example.com/categories/k%C5%8Dans/</link>
+    <description>Recent content in kōans on HUGO.386</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0200</lastBuildDate><atom:link href="https://example.com/categories/k%C5%8Dans/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mu</title>
+      <link>https://example.com/mu/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://example.com/mu/</guid>
+      <description>A monk asked Joshu, &amp;ldquo;Has the dog the Buddha nature?&amp;rdquo; Joshu replied, &amp;ldquo;Mu&amp;rdquo;
+Mumon&amp;rsquo;s Comment:  For the pursuit of Zen, you must pass through the barriers (gates) set up by the Zen masters. To attain his mysterious awareness one must completely uproot all the normal workings of one&amp;rsquo;s mind. If you do not pass through the barriers, nor uproot the normal workings of your mind, whatever you do and whatever you think is a tangle of ghost.</description>
+    </item>
+    
+    <item>
+      <title>Gutei&#39;s Finger</title>
+      <link>https://example.com/finger/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://example.com/finger/</guid>
+      <description>Gutei raised his finger whenever he was asked a question about Zen. A boy attendant began to imitate him in this way. When a visitor asked the boy what his master had preached about, the boy raised his finger.
+Gutei heard about the boy&amp;rsquo;s mischief, seized him and cut off his finger with a knife. As the boy screamed and ran out of the room, Gutei called to him. When the boy turned his head to Gutei, Gutei raised up his own finger.</description>
+    </item>
+    
+    <item>
+      <title>Nansen cuts a cat in two</title>
+      <link>https://example.com/half-cat/</link>
+      <pubDate>Sat, 07 Nov 2015 00:00:00 +0100</pubDate>
+      
+      <guid>https://example.com/half-cat/</guid>
+      <description>Nansen saw the monks of the eastern and western halls fighting over a baby cat. He seized the cat and said, &amp;ldquo;If (any of) you can say (a word of Zen), you can spare the cat. Otherwise I will kill it.&amp;rdquo; No one could answer. So Nansen cut the cat in two.
+That evening Joshu returned and Nansen told him what had happened. Joshu thereupon took off his sandals and, placing them on his head, walked away.</description>
+    </item>
+    
+  </channel>
+</rss>

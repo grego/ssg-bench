@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>HUGO.386</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000084" />
+    <link rel="icon" href="https://example.com/favicon.ico">
+    <link rel="canonical" href="https://example.com">
+    
+    
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
+            <a class="brand" href="https://example.com">HUGO.386</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+                    
+                        
+                            <li>
+                                <a href="/about/">
+                                    
+                                    <span>About</span>
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <a href="/post/">
+                                    
+                                    <span>All posts</span>
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav><div id="content" class="container">
+
+<div class="row-fluid navmargin">
+    <div class="page-header">
+        <h1>Emoji Support - Tue, Mar 5, 2019</h1>
+    </div>
+    <p class="lead">Guide to emoji usage in Hugo</p>
+    <p>Emoji can be enabled in a Hugo project in a number of ways.</p>
+<p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
+<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site’s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
+<!-- raw HTML omitted -->
+<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
+<hr>
+<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.emoji {
+font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+}</code></pre></div>
+    <h4><a href="https://example.com">Back to Home</a></h4>
+</div>
+
+
+        </div><footer class="container">
+    <hr class="soften">
+    <p>
+
+    <a href="https://gitlab.com/maxlefou/hugo.386">hugo.386 theme by Max le Fou</a> | 
+
+&copy; 
+<a href="http://jmf-portfolio.netlify.com" target="_blank">
+    JM Fergeau
+</a>
+<span id="thisyear">2020</span>
+
+    | Example site
+
+
+        | Built on <a href="//gohugo.io" target="_blank">Hugo</a>
+</p>
+    <p class="text-center">
+        <a href="https://facebook.com">Facebook</a> 
+        <a href="https://twitter.com">Twitter</a> 
+        <a href="https://linkedin.com">Linkedin</a> 
+        <a href="https://github.com">GitHub</a> 
+        <a href="https://gitlab.com">GitLab</a>
+    </p>
+</footer>
+
+</body><link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap-386.js"></script>
+<script src="/js/bootstrap-transition.js"></script>
+<script src="/js/bootstrap-alert.js"></script>
+<script src="/js/bootstrap-modal.js"></script>
+<script src="/js/bootstrap-dropdown.js"></script>
+<script src="/js/bootstrap-scrollspy.js"></script>
+<script src="/js/bootstrap-tab.js"></script>
+<script src="/js/bootstrap-tooltip.js"></script>
+<script src="/js/bootstrap-popover.js"></script>
+<script src="/js/bootstrap-button.js"></script>
+<script src="/js/bootstrap-collapse.js"></script>
+<script src="/js/bootstrap-carousel.js"></script>
+<script src="/js/bootstrap-typeahead.js"></script>
+<script src="/js/bootstrap-affix.js"></script>
+<script>
+    _386 = { 
+        fastLoad: false ,
+        onePass: false , 
+        speedFactor: 1 
+    };
+
+    
+    function ThisYear() {
+        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    };
+</script></html>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://example.com/gallery/</loc>
+    <lastmod>2020-09-19T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/authors/</loc>
+    <lastmod>2020-09-19T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/</loc>
+    <lastmod>2020-09-19T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/finger/</loc>
+    <lastmod>2020-09-19T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/authors/jane-doe/</loc>
+    <lastmod>2020-09-19T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/lisp/</loc>
+    <lastmod>2020-09-19T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/poetry/</loc>
+    <lastmod>2020-09-19T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2020-09-19T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/</loc>
+    <lastmod>2020-09-19T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/k%C5%8Dans/</loc>
+    <lastmod>2020-09-18T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/mu/</loc>
+    <lastmod>2020-09-18T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/authors/mumon/</loc>
+    <lastmod>2020-09-18T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/pets/</loc>
+    <lastmod>2020-09-18T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/borogoves/</loc>
+    <lastmod>2019-05-17T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/jabberwocky/</loc>
+    <lastmod>2019-05-17T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/authors/lewis-carroll/</loc>
+    <lastmod>2019-05-17T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/finger/</loc>
+    <lastmod>2018-12-12T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/food/</loc>
+    <lastmod>2015-11-07T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/half-cat/</loc>
+    <lastmod>2015-11-07T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/about/</loc>
+  </url>
+  
+</urlset>

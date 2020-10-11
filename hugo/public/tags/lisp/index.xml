@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lisp on HUGO.386</title>
+    <link>https://example.com/tags/lisp/</link>
+    <description>Recent content in lisp on HUGO.386</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0200</lastBuildDate><atom:link href="https://example.com/tags/lisp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A gallery</title>
+      <link>https://example.com/gallery/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0200</pubDate>
+      
+      <guid>https://example.com/gallery/</guid>
+      <description>This page is just a placeholder
+To show you a functionality Of generating A picture gallery
+With this generator</description>
+    </item>
+    
+    <item>
+      <title>Jabberwocky</title>
+      <link>https://example.com/jabberwocky/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://example.com/jabberwocky/</guid>
+      <description>’Twas brillig, and the slithy toves Did gyre and gimble in the wabe: All mimsy were the borogoves, And the mome raths outgrabe.
+“Beware the Jabberwock, my son! The jaws that bite, the claws that catch! Beware the Jubjub bird, and shun The frumious Bandersnatch!”
+He took his vorpal sword in hand; Long time the manxome foe he sought— So rested he by the Tumtum tree And stood awhile in thought.</description>
+    </item>
+    
+  </channel>
+</rss>
