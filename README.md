@@ -31,11 +31,11 @@ The default number of iterations is 100. You can edit it in `bench.sh`.
 ## Ad Blades
 Compared to the other two, Blades is a young hobby project, aiming at possibly different,
 simpler feature set. It could be rightfully claimed that this may provide an unfair advantage
-in this comparison, since even if the generator _Y_ doesn't use the feature _X_ here,
+in this comparison, since even if the generator _Y_ doesn't use the feature _X_ here
 (all features like that were attempted to be disabled),
-it makes it's architecture inherently more complex.
+it makes its architecture inherently more complex.
 
-To counter this, Blades have one feature enabled that the others lack: generating image galleries.
+To counter this, Blades has one feature enabled that the others lack: generating image galleries.
 That means it needs to generate nearly twice as many (9 vs 5) regular pages than the others
 and the page template is a little more complex. 
 
