@@ -8,7 +8,7 @@ Here, just a little attempt is made. [Blades](https://github.com/grego/blades),
 [Zola](https://github.com/getzola/zola) and [Hugo](https://github.com/gohugoio/hugo)
 (the self-proclaimed "world’s fastest framework for building websites") are compared.
 They use the same theme (based on [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386)),
-taylored for each, with pages that have the same content (as far as possible).
+tailored for each, with pages that have the same content (as far as possible).
 Feel free to browse the code, judge how representative it is and suggest improvements
 for more fairness and accuracy.
 The internal measurement of time for each program is used and is parsed from the output.
