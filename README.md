@@ -8,7 +8,7 @@ Here, just a little attempt is made. [Blades](https://github.com/grego/blades),
 [Zola](https://github.com/getzola/zola) and [Hugo](https://github.com/gohugoio/hugo)
 (the self-proclaimed "world’s fastest framework for building websites") are compared.
 They use the same theme (based on [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386)),
-taylored for each, with pages that have the same content (as far as possible).
+tailored for each, with pages that have the same content (as far as possible).
 Feel free to browse the code, judge how representative it is and suggest improvements
 for more fairness and accuracy.
 The internal measurement of time for each program is used and is parsed from the output.
@@ -30,11 +30,11 @@ The default number of iterations is 100. You can edit it in `bench.sh`.
 ## Ad Blades
 Compared to the other two, Blades is a young hobby project, aiming at possibly different,
 simpler feature set. It could be rightfully claimed that this may provide an unfair advantage
-in this comparison, since even if the generator _Y_ doesn't use the feature _X_ here,
+in this comparison, since even if the generator _Y_ doesn't use the feature _X_ here
 (all features like that were attempted to be disabled),
-it makes it's architecture inherently more complex.
+it makes its architecture inherently more complex.
 
-To counter this, Blades have one feature enabled that the others lack: generating image galleries.
+To counter this, Blades has one feature enabled that the others lack: generating image galleries.
 That means it needs to generate nearly twice as many (9 vs 5) regular pages than the others
 and the page template is a little more complex. 
 
