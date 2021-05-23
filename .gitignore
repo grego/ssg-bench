@@ -1,1 +1,3 @@
 blades/public/**/*.html
+hugo/public/**/*
+zola/public/**/*
