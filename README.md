@@ -13,13 +13,12 @@ Feel free to browse the code, judge how representative it is and suggest improve
 for more fairness and accuracy.
 The internal measurement of time for each program is used and is parsed from the output.
 
-On author's old machine (2011 Intel Core i5-2400S @ 2.66GHz, 4 physical cores),
-these results were measured:
-
+## Results
+2011 Intel Core i5-2400S @ 2.66GHz, 4 physical cores, Blades statically linked with MUSL:
 ```
-blades: 3.43311 ms (±1.41216)
-zola: 44.90000 ms (±4.08778)
-hugo: 53.46000 ms (±8.47516)
+blades: 1.23847 ms (±.16780)
+zola: 33.75000 ms (±.81700)
+hugo: 42.43000 ms (±11.75521)
 ```
 
 ## Running
