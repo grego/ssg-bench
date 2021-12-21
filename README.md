@@ -14,18 +14,25 @@ for more fairness and accuracy.
 The internal measurement of time for each program is used and is parsed from the output.
 
 ## Results
-Intel Core i5-2400S @ 2.66GHz, 4 physical cores, HDD, Blades statically linked with MUSL:
+Intel Core i5-2400S @ 2.66GHz, 4 physical cores, HDD:
 ```
-blades: 1.23847 ms (±.16780)
+blades: 2.52743 ms (±.28058)
 zola: 33.75000 ms (±.81700)
 hugo: 42.43000 ms (±11.75521)
 ```
 
-Intel Core i5-3230M CPU @ 2.60GHz, 2 physical cores, SSD, Blades statically linked with MUSL:
+Intel Core i5-3230M CPU @ 2.60GHz, 2 physical cores, SSD:
 ```
-blades: 1.27813 ms (±.12525)
+blades: 2.86216 ms (±.28282)
 zola: 29.13000 ms (±.90172)
 hugo: 45.71000 ms (±3.11542)
+```
+
+Rockchip 3399, 2+4 physical cores, eMMC:
+```
+blades: 10.11564 ms (±1.26302)
+zola: 242.10000 ms (±18.54804)
+hugo: 223.52000 ms (±27.17921)
 ```
 
 ## Running
