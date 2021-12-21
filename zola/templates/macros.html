@@ -3,10 +3,10 @@
   <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
   <p>{{ page.description }}</p>
   <dl class="dl-horizontal">
-    <dt>{{ config.extra.label_date }}</dt>
+    <dt>Date</dt>
     <dd>{{ page.date | date(format="%Y-%m-%d") }}</dd>
     
-    <dt>{{ config.extra.label_author }}</dt>
+    <dt>Author</dt>
     <dd>
       {% if page.extra.author %}
         {{page.extra.author}}
@@ -16,7 +16,7 @@
     </dd>
 
     {% if page.taxonomies.categories %}
-    <dt>{{ config.extra.label_taxonomy }}</dt>
+    <dt>Taxonomy</dt>
     <dd>
       <a href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0]) }}">
         {{ page.taxonomies.categories[0] }}
@@ -29,11 +29,11 @@
     </dd>
     {% endif %}
 
-    <dt>{{ config.extra.label_reading }}</dt>
+    <dt>Reading time</dt>
     <dd>{{ page.reading_time }}'</dd>
   </dl>
   <p>
-    <a href="{{ page.permalink }}" class="btn btn-info" role="button">{{ config.extra.label_read_more }}</a>
+    <a href="{{ page.permalink }}" class="btn btn-info" role="button">Read more</a>
   </p>
   <hr class="soften">
   <p></p>

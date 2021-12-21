@@ -1,7 +1,7 @@
 {% import "macros.html" as macro %}
 
 <!DOCTYPE html>
-<html lang="{% if page.extra.lang %}{{ page.extra.lang }}{% else %}{{ config.default_language }}{% endif %}" itemscope itemtype="http://schema.org/Blog">
+<html itemscope itemtype="http://schema.org/Blog">
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -46,21 +46,6 @@
   <meta property="og:image" content="{% block ogimg %}{{ config.extra.image }}{% endblock ogimg %}">
   {% endif %}
   <meta name="twitter:card" content="summary">
-  {% if config.extra.twitter_user %}
-  <meta name="twitter:site" content="{{ config.extra.twitter_user }}">
-  <meta name="twitter:creator" content="{{ config.extra.twitter_user }}">
-  <meta name="twitter:image:alt" content="{% block ogaltimg %}{{ config.title }}{% endblock ogaltimg %}">
-  {% endif %}
-
-  {% if config.extra.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{config.extra.google_analytics}}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{config.extra.google_analytics}}');
-  </script>
-  {% endif %}
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -72,11 +57,6 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 {% block navbar %}
-                {% for item in config.extra.zola386_menu %}
-                <li class="{% if item.path == current_path | replace(from="/", to="") %}active{% endif %}">
-                  <a href="{{ config.base_url }}/{{ item.path }}"><span>{{ item.name }}</span></a>
-                </li>
-                {% endfor %}
                 {% endblock %}
               </ul>
             </div>
@@ -110,14 +90,6 @@
 
       <div class="span3 bs-docs-sidebar">
       {% block sidebar %}
-        <h1>Search</h1>
-        <form class="form-search">
-          <input id="search" type="text" class="input-large search-query">
-        </form>
-        <div class="search-results">
-          <div class="search-results__items"></div>
-        </div>
-        <p></p>
         <h1>Categories</h1>
         <ul class="nav nav-list bs-docs-sidenav">
           {% set categories = get_taxonomy(kind="categories") %}
@@ -161,25 +133,5 @@
         Built on <a href="https://getzola.org" target="_blank">Zola</a>
     </p>
   </footer>
-
-  <script src="{{ get_url(path="js/jquery.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-386.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-transition.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-alert.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-modal.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-dropdown.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-scrollspy.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-tab.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-tooltip.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-popover.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-button.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-collapse.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-carousel.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-typeahead.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/bootstrap-affix.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/zola.386.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="js/search.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="elasticlunr.min.js", trailing_slash=false) | safe }}"></script>
-  <script src="{{ get_url(path="search_index.en.js", trailing_slash=false) | safe }}"></script>
 </body>
 </html>

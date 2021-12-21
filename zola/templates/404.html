@@ -2,14 +2,6 @@
 
 {% block title %}{{ config.title }} - 404{% endblock title %}
 
-{% block navbar %}
-{% for item in config.extra.zola386_menu %}
-<li>
-  <a href="{{ config.base_url }}/{{item.path}}"><span>{{ item.name }}</span></a>
-</li>
-{% endfor %}
-{% endblock %}
-
 {% block header %}
 <div class="alert alert-error navmargin">
   <h1>404 - Not found</h1>

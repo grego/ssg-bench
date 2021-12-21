@@ -2,28 +2,51 @@
 
 <div class="row-fluid navmargin">
     <div class="page-header">
-        <h1>{{ .Site.Params.mainpagetitle }}</h1>
+        <h1>{{ .Site.Params.mainpagetitle }} <small>{{ .Site.Params.mainpagesubtitle }}</small></h1>
     </div>
 </div>
 
 <div class="row-fluid">
     <div class="span9 bs-docs-sidebar">
-        <p class="lead">{{ .Site.Params.mainpagesubtitle }}</p>
-        <p></p>
-        <p>{{ .Site.Params.mainpagedesc }}</p>
-        <p></p>
-        <hr class="soften">
-        <p></p>
-        <h1>{{ i18n "postslist" }}</h1>
-        <ul>
-            {{ range first 10 .Site.RegularPages }}
-            {{ if eq .Type "post" }}
-            <li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a></li>
-            {{ end }}
-            {{ end }}
-        </ul>
-    </div>
+        {{ range .Paginator.Pages }}<div>
+          <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+          <p>{{ .Params.description }}</p>
+          <dl class="dl-horizontal">
+            <dt>Date:</dt>
+            <dd>{{ .Date.Format "2006-01-02" }}</dd>
+            
+            <dt>Author</dt>
+            <dd>{{ range (.GetTerms "authors") }}{{ .LinkTitle }} {{ end }}</dd>
 
+            <dt>Taxonomies</dt>
+            <dd>
+              {{ range (.GetTerms "categories") }}<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>{{ end }} |
+              {{ range (.GetTerms "tags") }}<a href="{{ .Permalink }}">{{ .LinkTitle }}</a> {{ end }}
+            </dd>
+            </dl>
+          <p><a href="{{ .Permalink }}" class="btn btn-info" role="button">Read more</a></p>
+          <hr class="soften">
+          <p></p>
+        </div>{{ end }}
+        <div class="pagination pagination-centered">
+          <ul>
+            <li {{ if not .Paginator.HasPrev }}class="disabled"{{ end }}>
+                <a {{ if .Paginator.HasPrev }}href="{{ .Paginator.First.URL }}"{{ end }}>&larrb;</a>
+            </li>
+            <li {{ if not .Paginator.HasPrev }}class="disabled"{{ end }}>
+                <a {{ if .Paginator.HasPrev }}href="{{ .Paginator.Prev.URL }}"{{ end }}>&larr;</a>
+            </li>
+            <li class="disabled"><a href="#">{{ .Paginator.PageNumber }}/{{ .Paginator.TotalPages }}</a></li>
+            
+            <li {{ if not .Paginator.HasNext }}class="disabled"{{ end }}>
+                <a {{ if .Paginator.HasNext }}href="{{ .Paginator.Next.URL }}"{{ end }}>&rarr;</a>
+            </li>
+            <li {{ if not .Paginator.HasNext }}class="disabled"{{ end }}>
+                <a {{ if .Paginator.HasNext }}href="{{ .Paginator.Last.URL }}"{{ end }}>&rarrb;</a>
+            </li>
+          </ul>
+        </div>
+    </div>
     <div class="span3 bs-docs-sidebar">
         <h1>{{ i18n "categories" }}</h1>
         <ul class="nav nav-list bs-docs-sidenav">

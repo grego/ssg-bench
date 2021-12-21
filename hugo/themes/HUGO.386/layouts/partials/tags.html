@@ -1,4 +1,4 @@
-{{range first 10 ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
+{{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
 <li>
     <a href="{{ .Permalink }}">{{.Title}}</a>
 </li>

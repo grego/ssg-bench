@@ -1,0 +1,48 @@
+{% extends "index.html" %}
+
+{% block title %}{{ config.title}} - {{ section.title }}{% endblock title %}
+
+{% block ogtitle %}{{ config.title}} - {{ section.title }}{% endblock ogtitle %}
+{% block ogdesc %}{{ section.description }}{% endblock ogdesc %}
+{% block ogurl %}{% if section.slug %}{{ config.base_url }}/{{ section.slug }}{% endif %}{% endblock ogurl %}
+{% block ogimg %}{% if section.extra.image %}{{ section.extra.image }}{% endif %}{% endblock ogimg %}
+
+
+{% block breadcrumb %}
+<p class="lead">
+  <span>&gt;&gt;</span>
+  <a href="{{ config.base_url }}">Home</a>
+  {% if section.taxonomies %}
+    <span class="divider">/</span>
+    <a class="category" href="{{ get_taxonomy_url(kind="categories", name=section.taxonomies.categories[0]) }}">{{ section.taxonomies.categories[0] }}</a>
+    <span class="divider">/</span>
+      {% for tag in section.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a>{% if section.taxonomies.tags | length > 1 %}{% if loop.index != section.taxonomies.tags | length %},{% endif %}{% endif %}
+      {% endfor %}
+  {% endif %}
+</p>
+{% endblock breadcrumb %}
+
+{% block header %}
+<div class="section-header">
+  <h1>{{ section.title }}</h1>
+</div>
+{% endblock header %}
+
+{% block meta %}
+<p class="text-right">
+  <span class="label label-success">
+    &becaus;
+    {% if section.extra.author %}
+      {{ section.extra.author }}
+    {% else %}
+      {{ config.extra.author }}
+    {% endif %}
+  </span>
+  <span class="label label-success">&infin; {{ section.reading_time }}'</span>
+</p>
+{% endblock meta %}
+
+{% block main %}
+{{ section.content | safe }}
+{% endblock main %}
