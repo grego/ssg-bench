@@ -16,9 +16,9 @@ The internal measurement of time for each program is used and is parsed from the
 ## Results
 Intel Core i5-2400S @ 2.66GHz, 4 physical cores, HDD:
 ```
-blades: 2.52743 ms (±.28058)
-zola: 33.75000 ms (±.81700)
-hugo: 42.43000 ms (±11.75521)
+blades: 2.49836 ms (±.26011), median = 2.265 ms
+zola: 58.75000 ms (±5.31379), median = 54 ms
+hugo: 54.91304 ms (±19.44189), median = 48 ms
 ```
 
 Intel Core i5-3230M CPU @ 2.60GHz, 2 physical cores, SSD:
