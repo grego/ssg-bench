@@ -1,10 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-ITERATIONS=100
-DELAY="0.08s"
+ITERATIONS=103
+DELAY="0.02s"
 # Number of worst values to not count in the average
-THROWAWAY=8
+THROWAWAY=3
 
 function bench {
     cd $1;
@@ -15,12 +15,12 @@ function bench {
         sleep $DELAY
     done
 
-    IFS=$'\n' sorted=($(sort -n <<<"${results[*]}"))
+    IFS=$'\n' sorted=($(sort -n -r <<<"${results[*]}"))
     unset IFS
 
     middle=$(echo "scale=0; $ITERATIONS / 2" | bc -l)
     median=${sorted[$middle]}
-    better=(${sorted[@]:-$THROWAWAY})
+    better=(${sorted[@]:$THROWAWAY})
 
     mean="0"
     for r in "${better[@]}"

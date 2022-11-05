@@ -14,6 +14,13 @@ for more fairness and accuracy.
 The internal measurement of time for each program is used and is parsed from the output.
 
 ## Results
+AMD Ryzen 9 5900X @ 3.7GHz, 12 physical cores, NVMe
+```
+blades: .96775 ms (±.09224), median = 0.95 ms
+zola: 20.91000 ms (±1.05919), median = 21 ms
+hugo: 24.95000 ms (±1.28354), median = 25 ms
+```
+
 Intel Core i5-2400S @ 2.66GHz, 4 physical cores, HDD:
 ```
 blades: 2.49836 ms (±.26011), median = 2.265 ms
