@@ -30,9 +30,9 @@ hugo: 54.91304 ms (±19.44189), median = 48 ms
 
 Intel Core i5-3230M CPU @ 2.60GHz, 2 physical cores, SSD:
 ```
-blades: 2.86216 ms (±.28282)
-zola: 29.13000 ms (±.90172)
-hugo: 45.71000 ms (±3.11542)
+blades: 2.63907 ms (±.21769), median = 2.645 ms
+zola: 49.95000 ms (±2.32540), median = 49 ms
+hugo: 53.23000 ms (±2.45297), median = 53 ms
 ```
 
 Rockchip 3399, 2+4 physical cores, eMMC:
