@@ -16,9 +16,9 @@ The internal measurement of time for each program is used and is parsed from the
 ## Results
 AMD Ryzen 9 5900X @ 3.7GHz, 12 physical cores, NVMe
 ```
-blades: .96775 ms (±.09224), median = 0.95 ms
-zola: 20.91000 ms (±1.05919), median = 21 ms
-hugo: 24.95000 ms (±1.28354), median = 25 ms
+blades: .91674 ms (±.09523), median = 0.915 ms
+zola: 19.79000 ms (±.47528), median = 20 ms
+hugo: 23.69000 ms (±1.21404), median = 24 ms
 ```
 
 Intel Core i5-2400S @ 2.66GHz, 4 physical cores, HDD:
@@ -28,7 +28,7 @@ zola: 58.75000 ms (±5.31379), median = 54 ms
 hugo: 54.91304 ms (±19.44189), median = 48 ms
 ```
 
-Intel Core i5-3230M CPU @ 2.60GHz, 2 physical cores, SSD:
+Intel Core i5-3230M @ 2.60GHz, 2 physical cores, SSD:
 ```
 blades: 2.63907 ms (±.21769), median = 2.645 ms
 zola: 49.95000 ms (±2.32540), median = 49 ms
